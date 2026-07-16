@@ -103,7 +103,7 @@ export default function XPProductivityHub() {
             <div className="premium-card rounded-3xl p-6">
               <div className="flex justify-between items-center mb-4">
                 <div>
-                  <div className="text-[#C68E5E] text-sm tracking-widest">TODAY'S PROGRESS</div>
+                  <div className="text-[#C68E5E] text-sm tracking-widest">TODAY&apos;S PROGRESS</div>
                   <div className="text-3xl font-semibold mt-1">{completedTasks} of {totalTasks} tasks completed</div>
                 </div>
                 <div className="text-right">
@@ -117,7 +117,7 @@ export default function XPProductivityHub() {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               <div className="lg:col-span-2 premium-card rounded-3xl p-8">
-                <div className="text-[#C68E5E] text-xs tracking-[3px] mb-3">TODAY'S MISSION BRIEF</div>
+                <div className="text-[#C68E5E] text-xs tracking-[3px] mb-3">TODAY&apos;S MISSION BRIEF</div>
                 <p className="text-lg">Use your morning peak energy on closing client work. Protect the 8:00pm CPA block. Finish the day with clarity and respect your 11:00pm bedtime.</p>
               </div>
               <div className="premium-card rounded-3xl p-8 border border-[#B84C3C]">
@@ -137,7 +137,7 @@ export default function XPProductivityHub() {
         {activeTab === 'schedule' && (
           <div>
             <div className="flex justify-between mb-6">
-              <h2 className="text-4xl font-semibold">Today's Execution Schedule</h2>
+              <h2 className="text-4xl font-semibold">Today&apos;s Execution Schedule</h2>
               <button onClick={() => setShowAddModal(true)} className="btn-primary px-6 py-3 rounded-2xl">+ Add New Task</button>
             </div>
 
@@ -160,7 +160,7 @@ export default function XPProductivityHub() {
                         <option>Moved</option>
                         <option>Skipped</option>
                       </select>
-                      <button onClick={(e) => { e.stopPropagation(); openEdit(block); }} className="text-[#C68E5E] hover:text-white text-sm">Edit</button>
+                      <button onClick={(e) => { e.stopPropagation(); /* openEdit(block); */ }} className="text-[#C68E5E] hover:text-white text-sm">Edit</button>
                       <button onClick={(e) => { e.stopPropagation(); deleteTask(block.id); }} className="text-[#B84C3C] hover:text-white text-sm">Delete</button>
                     </div>
                   </div>
@@ -198,7 +198,7 @@ export default function XPProductivityHub() {
             <div className="premium-card rounded-3xl p-8 w-full max-w-md">
               <h3 className="text-2xl font-semibold mb-6">Add New Task</h3>
               <input className="w-full bg-[#221A16] border border-[#3A2F28] rounded-2xl px-5 py-4 mb-4" placeholder="Task name" value={newTaskName} onChange={(e) => setNewTaskName(e.target.value)} />
-              <button onClick={addNewTask} className="btn-primary w-full py-4 rounded-2xl">Add & Re-optimise</button>
+              <button onClick={addNewTask} className="btn-primary w-full py-4 rounded-2xl">Add &amp; Re-optimise</button>
               <button onClick={() => setShowAddModal(false)} className="w-full py-3 mt-3 text-[#A38F7A]">Cancel</button>
             </div>
           </div>
